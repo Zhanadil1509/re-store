@@ -1,9 +1,10 @@
 import React from 'react'
+import {Route, Switch} from 'react-router-dom'
+import {HomePage, CartPage} from '../pages'
 import {withBookstoreService} from '../../hoc'
 
-const App = ({bookstoreService}) => {
-  console.log(bookstoreService.getBooks())
-  const list = bookstoreService.getBooks().map((v, i) => {
+const App = () => {
+  /*const list = bookstoreService.getBooks().map((v, i) => {
     return (
       <li key={i}>
         <p>Author: {v.title}</p> <span>Book: {v.author}</span>
@@ -17,6 +18,12 @@ const App = ({bookstoreService}) => {
         {list}
       </ul>
     </div>
+  )*/
+  return (
+    <Switch>
+      <Route path={'/cart'} component={CartPage} />
+      <Route path={'/'} component={HomePage} />
+    </Switch>
   )
 }
 
