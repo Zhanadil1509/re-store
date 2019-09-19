@@ -1,0 +1,20 @@
+.book-cover img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+.book-details button {
+    border-radius: 3px;
+    background: #3285ff;
+    box-shadow: 0 0 4px 2px rgba(0,0,0, .15);
+    border: none;
+    padding: 5px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.book-details button:hover {
+    background: #346dff;
+    box-shadow: 0 0 6px 2px rgba(0,0,0, .25);
+}

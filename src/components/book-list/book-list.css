@@ -1,0 +1,12 @@
+.book-list {
+    list-style: none;
+}
+.book-list li {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 12px 0;
+}
+.book-list li > div {
+    display: flex;
+}
