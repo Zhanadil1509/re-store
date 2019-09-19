@@ -4,7 +4,7 @@ import BookList from '../book-list/book-list'
 const HomePage = () => {
   return (
     <div>
-      <BookList books={[]} />
+      <BookList />
     </div>
   )
 }
