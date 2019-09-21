@@ -1,13 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const ShopHeader = ({numItems, total}) => {
   return (
     <header>
-      <a href="/#" className={'logo'}>ReStore</a>
-      <a href="/">
+      <Link to="/#" className={'logo'}>ReStore</Link>
+      <Link to="/">
         <i className={'cart-icon'} />
         {numItems} items (${total})
-      </a>
+      </Link>
     </header>
   )
 }
