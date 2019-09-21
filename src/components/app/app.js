@@ -4,6 +4,7 @@ import {HomePage, CartPage} from '../pages'
 import {withBookstoreService} from '../../hoc'
 import './app.css'
 import {ShopHeader} from '../shop-header'
+import ShoppingCartTable from '../shopping-cart-table'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path={'/cart'} component={CartPage} />
         <Route path={'/'} component={HomePage} />
       </Switch>
+      <ShoppingCartTable />
     </main>
   )
 }
