@@ -1,3 +1,3 @@
-import BookList from './book-list'
+import BookListContainer from './book-list'
 
-export {BookList}
+export {BookListContainer}
