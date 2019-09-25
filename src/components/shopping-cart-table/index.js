@@ -7,7 +7,7 @@ const ShoppingCartTable = ({items, total, onIncrease, onDecrease, onDelete}) => 
     return(
       <tr key={i}>
         <td>{i + 1 }</td>
-        <td>{v.name}</td>
+        <td>{v.title}</td>
         <td>{v.count}</td>
         <td>{v.total}</td>
         <td>
